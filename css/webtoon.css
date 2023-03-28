@@ -61,6 +61,7 @@
     overflow:hidden; 
     text-overflow:ellipsis;
     height:54px;
+    line-height: 18px;
 }
 /* 컨텐츠 영역 종료 */
 /* 웹툰 바로가기 영역 시작 */
