@@ -95,8 +95,6 @@ function reviewSlider(review_index) {
     $('.reviewImg div').animate({
         left : -(review_index*688)
     },'fast');
-    $('.review_button').css('bottom',1);
-    $('.review_button').eq(review_index).css('bottom',31);
 }
 // 이미지 선택별 리뷰창 보이기
 let div_index = 0;

@@ -73,7 +73,5 @@ $(function () {
         $('#novel li').animate({
             left : -(novel_index*712)
         },'fast');
-        $('.novel_button').css('bottom',1);
-        $('.novel_button').eq(novel_index).css('bottom',31);
     }
 });
