@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver웹툰</title>
+    <link rel="shortcut icon" href="images/webtoon.png">
+    <link rel="stylesheet" href="css/qrlogin.css">
+    <link rel="stylesheet" href="css/logincommon.css">
+    <script src="js/qrlogin.js"></script>
+</head>
+<body>
+    <!-- 로그인 전체 영역 시작 -->
+    <div id="loginWrap">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="images/webtoon.png" alt="logo">
+            </a>
+        </h1>
+        <div class="qrloginArea">
+            <h2>QR코드 로그인</h2>
+            <p>네이버 앱&gt;하단 중간의&gt;메뉴<br><img src="images/qrimg.PNG" alt="qrimg" width="15" height="15">아이콘을 눌러 QR코드를 스캔하세요.</p>
+            <div class="qrbox">
+                <img src="images/qrcode.png" alt="qrcode" width="140" height="140">          
+                <div class="qrtimer">
+                    <span>남은 시간: </span>
+                    <em id="emptytime">05:00</em>
+                    <button type="reset"><img src="images/reset.png" alt="reset" width="20" height="20"></button>
+                </div>                
+            </div>
+            <label for="login" class="loggin"><input type="checkbox" name="login" id="login"><span>로그인 상태 유지</span></label>
+            <button type="submit" class="qrok">확인</button>
+            <a href="login.html">네이버계정 직접 입력</a>
+        </div>
+
+        <footer id="footer">
+            <div class="footer_link">
+                <ul>
+                    <li>이용약관</li>
+                    <li><strong>개인정보처리방침</strong></li>
+                    <li>책임의 한계와 법적고지</li>
+                    <li>회원정보 고객센터</li>
+                </ul>
+            </div>
+            <div class="footer_copy">
+                <span class="text">Copyright</span>
+                <span class="corp">© NAVER Corp.</span>
+                <span class="text">All Rights Reserved.</span>
+            </div>
+        </footer>
+    </div>
+    <!-- 로그인 전체 영역 종료-->
+</body>
+</html>

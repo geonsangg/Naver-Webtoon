@@ -1,0 +1,106 @@
+@charset "utf-8";
+/*헤더 부분 */
+.mainMenu li:nth-child(4) {
+    background-color: rgb(0, 213, 100);
+}
+.mainMenu li:nth-child(4) a {
+    color: #fff;
+}
+/* 공지사항 영역 시작 */
+#noticeArea {
+    width: 710px;
+    margin-top: 20px;
+}
+#noticeArea h2 {
+    font-size: 21px;
+    padding: 14px 0;
+}
+#noticeArea div {
+    border-bottom: 1px solid #ddd;
+}
+#noticeArea div:last-of-type{
+    border: none;
+}
+#noticeArea dt {
+    width: 680px;
+    height: 40px;
+    padding: 20px 15px;
+    font-size: 14px;
+    color: #222;
+    cursor: pointer;
+    background: url(../images/point.png) no-repeat 650px 25px;
+    background-size: 30px;
+}
+#noticeArea dt span {
+    font-size: 12px;
+    color: #999;
+}
+#noticeArea dd:first-of-type {
+    display: none;
+    width: 680px;
+    padding: 24px 15px;
+    font-size: 13px;
+    background: rgb(247, 247, 247);
+    color: #444;
+    line-height: 1.2em;
+}
+#noticeArea dd span {
+    color: #222;
+    font-weight: bold;
+}
+#noticeArea .imgdd {
+    height: 500px;
+    overflow: hidden;
+}
+#noticeArea img {
+    width: 680px;
+}
+#noticeArea .open {
+    display: none;
+    width: 109px;
+    height: 35px;
+    margin-top: 5px;
+    margin-left: 290.5px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 35px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+/* 사이드 영역 시작 */
+#side .sideImgArea {
+    margin-top: 10px;
+}
+#side .newBestChallenge {
+    width: 240px;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    background-color: rgb(249, 249, 251);
+    border:1px solid #ccc;
+}
+#side .newBestChallenge h3 {
+    font-size: 16px;
+    margin: 15px 0 0 19px;
+}
+#side .newBestChallenge h3 span {
+    color:  rgb(0, 213, 100);
+}
+#side .newBestChallenge a:first-of-type{
+    margin: 0px 19px;
+}
+#side .newBestChallenge a:nth-of-type(2) {
+    color: #000;
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: 19px;
+}
+#side .newBestChallenge a:last-of-type {
+    width: 202px;
+    color: rgb(179, 181, 183);
+    font-size: 12px;
+    margin-left: 19px;
+}
+/* 사이드 영역 종료 */

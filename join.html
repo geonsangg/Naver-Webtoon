@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver웹툰</title>
+    <link rel="shortcut icon" href="images/webtoon.png">
+    <link rel="stylesheet" href="css/logincommon.css">
+    <link rel="stylesheet" href="css/join.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/join.js"></script>
+</head>
+<body>
+    <!-- 로그인 전체 영역 시작 -->
+    <div id="loginWrap">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="images/webtoon.png" alt="logo">
+            </a>
+        </h1>
+    <!--회원가입 영역 시작-->
+       <div id="joinArea">
+            <form action="join.js" method="post" id="joinForm" name="joinForm">
+                <fieldset>
+                    <legend>회원가입</legend>
+                    <div>
+                        <label for="id">아이디</label>
+                        <input type="text" id="id" name="id" required placeholder="아이디 혹은 이메일을 입력해주세요">
+                    </div>
+                    <div>
+                        <label for="password">비밀번호</label>
+                        <input type="password" id="password" name="password" required placeholder="8~16자 영문 대 소문자, 숫자, 특수문자를 포함해주세요">
+                    </div>
+                    <div>
+                        <label for="confirmPassword">비밀번호 재확인</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                    <div>
+                        <label for="name">이름</label>
+                        <input type="text" id="name" name="name" required placeholder="성함을 입력해주세요">
+                    </div>
+                    <div>
+                        <label for="yy">생년월일</label>
+                        <div>
+                            <input type="text" name="yy" id="yy" required placeholder="년(4자)">
+                            <label for="mm"></label>
+                            <select name="mm" id="mm">
+                                <option>월</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <label for="dd"></label>
+                            <input type="text" id="dd" name="dd" required placeholder="일">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="gender">성별</label>
+                        <select name="gender" id="gender">
+                            <option>성별</option>
+                            <option value="Man">남자</option>
+                            <option value="Girl">여자</option>
+                            <option value="none">선택안함</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="email">본인 확인 이메일<span>(선택)</span></label>
+                        <input type="email" id="email" name="email" placeholder="선택입력">
+                    </div>
+                    <div>
+                        <label for="phone">전화번호</label>
+                        <input type="text" id="phone" name="phone" required placeholder="전화 번호 입력">
+                    </div>
+                    <div class="webb">
+                        <label for="web1">선호 장르</label>
+                        <div>
+                            <select name="web1" id="web1">
+                                <option value="no0">장르</option>
+                                <option value="에피소드">에피소드</option>
+                                <option value="옴니버스">옴니버스</option>
+                                <option value="스토리">스토리</option>
+                                <option value="일상">일상</option>
+                                <option value="개그">개그</option>
+                                <option value="판타지">판타지</option>
+                                <option value="액션">액션</option>
+                                <option value="드라마">드라마</option>
+                                <option value="스릴러">스릴러</option>
+                                <option value="순정">순정</option>
+                                <option value="감성">감성</option>
+                                <option value="무협/사극">무협/사극</option>
+                                <option value="스포츠">스포츠</option>
+                            </select>
+                            <select name="web2" id="web2">
+                                <option value="no1">장르</option>
+                                <option value="에피소드">에피소드</option>
+                                <option value="옴니버스">옴니버스</option>
+                                <option value="스토리">스토리</option>
+                                <option value="일상">일상</option>
+                                <option value="개그">개그</option>
+                                <option value="판타지">판타지</option>
+                                <option value="액션">액션</option>
+                                <option value="드라마">드라마</option>
+                                <option value="스릴러">스릴러</option>
+                                <option value="순정">순정</option>
+                                <option value="감성">감성</option>
+                                <option value="무협/사극">무협/사극</option>
+                                <option value="스포츠">스포츠</option>
+                            </select>
+                            <select name="web3" id="web3">
+                                <option value="no2">장르</option>
+                                <option value="에피소드">에피소드</option>
+                                <option value="옴니버스">옴니버스</option>
+                                <option value="스토리">스토리</option>
+                                <option value="일상">일상</option>
+                                <option value="개그">개그</option>
+                                <option value="판타지">판타지</option>
+                                <option value="액션">액션</option>
+                                <option value="드라마">드라마</option>
+                                <option value="스릴러">스릴러</option>
+                                <option value="순정">순정</option>
+                                <option value="감성">감성</option>
+                                <option value="무협/사극">무협/사극</option>
+                                <option value="스포츠">스포츠</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" id="joinBtn">가입하기</button>
+                </fieldset>
+            </form>
+       </div>
+        <footer id="footer">
+            <div class="footer_link">
+                <ul>
+                    <li>이용약관</li>
+                    <li><strong>개인정보처리방침</strong></li>
+                    <li>책임의 한계와 법적고지</li>
+                    <li>회원정보 고객센터</li>
+                </ul>
+            </div>
+            <div class="footer_copy">
+                <span class="text">Copyright</span>
+                <span class="corp">© NAVER Corp.</span>
+                <span class="text">All Rights Reserved.</span>
+            </div>
+        </footer>
+    </div>
+    <!-- 로그인 전체 영역 종료-->
+    <!-- fixed  -->
+    <a href="#loginWrap" id="gotop">↑</a>
+</body>
+</html>

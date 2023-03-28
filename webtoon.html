@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver웹툰</title>
+    <link rel="shortcut icon" href="images/webtoon.png">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/webtoon.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/webtoonDark.js"></script>
+    <script src="js/webtoon.js"></script>
+</head>
+<body>
+    <!-- wrapper 영역 시작 -->
+    <div id="wrapper">
+        <!-- 헤더 부분 시작 -->
+        <header id = "header">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="images/webtoon.png" alt="webtoon">
+                </a>
+            </h1>    
+            <form action="search.jsp" method="get" id="searchForm" name="searchForm">
+                <fieldset>
+                    <legend>검색</legend>
+                        <div class="search_box">
+                            <label for="searchWt"></label>
+                            <input type="text" id="searchWt" name="searchWt" placeholder="제목 / 작가로 검색할 수 있습니다.">
+                            <button type="button">검색</button>
+                        </div>
+                </fieldset>
+            </form>
+            <div class="login">
+                <a href="login.html">로그인</a>
+                <a href="join.html">회원가입</a>
+            </div>
+            <nav>
+                <ul class="mainMenu">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="webtoon.html">웹툰</a></li>
+                    <li><a href="playground.html">놀이터</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                    <li><a href="login.html">마이페이지</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 헤더 부분 종료 -->
+        <!-- 컨텐츠 영역 시작-->
+        <div id="mainAll">
+            <div id="contents">
+                <div class="cuttoon">
+                    <h2><span>컷툰</span> 추천 웹툰</h2>
+                    <ul>
+                        <li><a href="#"><img src="images/api1.jpg" alt="컷툰1"></a>
+                            <a href="#">대학원 탈출일지</a>
+                            <p>요다</p>
+                            <p>연구에 꿈을 가지고 대학원을 선택한 병아리 요다.
+                                예상과는 다르게 연구에 관심 없는 교수님과
+                                똥군기의 연구실 분위기에 당황한다.
+                                요다는 과연 무사히 대학원을 탈출할 수 있을것인가?!</p>
+                        </li>
+                        <li><a href="#"><img src="images/api2.jpg" alt="컷툰2"></a>
+                            <a href="#">웅크</a>
+                            <p>나유진</p>
+                            <p>그시절 우리가 사랑했던 웹툰 &lt;일상날개짓&gt; 나유진 작가님의 힐링 차기작. '나는 왜 태어났을까?' 지금 이곳에 존재하기 위해 얼마나 꼬물꼬물 애썼던가. 그 잃어버린 기억을 찾아 떠나는 엄마 뱃속 감성 판타지! 하나의 세포에 불과했던 우리 모두가 거쳐온, 280일의 성장 이야기가 시작된다.</p>
+                        </li>
+                        <li><a href="#"><img src="images/api3.jpg" alt="컷툰3"></a>
+                            <a href="#">삼국지톡</a>
+                            <p>무적핑크</p>
+                            <p>"유비, 조조, 손권 등 영웅들이 활약하던 후한, 그 난세에 핸드폰이 있었다면?
+                                메신저로 소통하고, 개인 방송으로 군사를 모집한다!
+                                이제껏 보지 못한 완전히 새로운 삼국지!"</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="monday">
+                    <h2><span>월요일</span> 추천 웹툰</h2>
+                    <ul>
+                        <li><a href="#"><img src="images/spt1.jpg" alt="mon1"></a>
+                            <a href="#">윈드브레이커</a>
+                            <p>조용석</p>
+                            <p>혼자서 자전거를 즐겨타던 모범생 조자현.
+                                원치 않게 자전거 크루의 일에 자꾸 휘말리게 되는데...
+                                자유를 꿈꾸는 청춘들의 스트릿라이딩 드라마!</p>
+                        </li>
+                        <li><a href="#"><img src="images/fan1.jpg" alt="mon2"></a>
+                            <a href="#">신의 탑</a>
+                            <p>SIU</p>
+                            <p>자신의 모든 것이었던 소녀를 쫓아 탑에 들어온 소년
+                                그리고 그런 소년을 시험하는 탑</p>
+                        </li>
+                        <li><a href="#"><img src="images/fan3.jpg" alt="mon3"></a>
+                            <a href="#">앵무살수</a>
+                            <p>김성진</p>
+                            <p>평범한 뱃사공으로 살고 있는 노소하.
+                                하지만 그의 정체는 전설적인 구파검법의 후계자다.
+                                이제 진시황이 남긴 비서 선근경을 향한 살수행이 시작된다.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tuesday">
+                    <h2><span>화요일</span> 추천 웹툰</h2>
+                    <ul>
+                        <li><a href="#"><img src="images/omni1.jpg" alt="tue1"></a>
+                            <a href="#">사변괴담</a>
+                            <p>강태진</p>
+                            <p>전쟁 발발 후. 영남의 가족은 남쪽에 있는 숙부의 집으로 피난을 간다.
+                                숙부의 집에는 처음 보는 음산한 분위기의 여자가 자신을 새로운 숙모라고 소개한다.
+                                온몸에 붕대를 감은 채 몸 져 누워있는 숙부도 이상하다.
+                                한밤중 홀로 피의 의식을 치르는 숙모. 정체를 알 수 없는 할머니 귀신. 어디론가 사라진 아버지와 어머니. 혼란과 공포 가운데 놓인 영남과 어린 동생 영순은 이 집을 무사히 빠져나갈 수 있을까?</p>
+                        </li>
+                        <li><a href="#"><img src="images/sto2.jpg" alt="tue2"></a>
+                            <a href="#">김부장</a>
+                            <p>박태준 만화회사</p>
+                            <p>“제발 안경 쓴 아저씨는 건들지 말자…”
+                                오직 자신의 딸 '민지'를 위해 특수요원직을 관두고 평범함을 선택한 가장 김부장.
+                                그러던 어느 날 민지가 소리소문 없이 사라지고, 김부장은 자신을 감시하는 국가를 적으로 돌리면서까지 딸을 찾아나서기 시작하는데...
+                                [외모지상주의], [싸움독학] 그리고 [인생존망]의 세계관을 잇는 공식 스핀오프 작품!</p>
+                        </li>
+                        <li><a href="#"><img src="images/api4.jpg" alt="tue3"></a>
+                            <a href="#">한림체육관</a>
+                            <p>혜성</p>
+                            <p>'세상에서 가장 강한 남자가 되고 싶다.'
+                                그릇된 강함을 실천하던 전영하가 한림체육관에 들어와 진정한 강함을 깨닫고 무도인으로 거듭나는 학원 액션물</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wednsday">
+                    <h2><span>수요일</span> 추천 웹툰</h2>
+                    <ul>
+                        <li><a href="#"><img src="images/spt4.jpg" alt="wed1"></a>
+                            <a href="#">빌드업</a>
+                            <p>911</p>
+                            <p>축구덕후지만 볼보이만 5년째?!
+                                빵셔틀 강마루의 열혈청춘 축구드라마</p>
+                        </li>
+                        <li><a href="#"><img src="images/act3.jpg" alt="wed2"></a>
+                            <a href="#">신군</a>
+                            <p>규남</p>
+                            <p>악마에게 모든 걸 잃고 먹이로 사육당하는 소년.
+                                이를 갈며 복수를 갈망하지만 인간의 힘은 악마에게 닿지 못했다.
+                                그때 그의 앞에 신군이 나타난다.
+                                2020 지상최대공모전 2기 장려상 수상작!</p>
+                        </li>
+                        <li><a href="#"><img src="images/co5.jpg" alt="wed3"></a>
+                            <a href="#">언덕 위의 제임스</a>
+                            <p>쿠당탕</p>
+                            <p>제임스들이 펼치는 코믹 막장 에피소드!
+                                지금 전세계의 제임스들이 몰려온다</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="thursday">
+                    <h2><span>목요일</span> 추천 웹툰</h2>
+                    <ul>
+                        <li><a href="#"><img src="images/sto1.jpg" alt="thu1"></a>
+                            <a href="#">앞집나리</a>
+                            <p>민송아</p>
+                            <p>어느 날 갑자기 나의 평온한 일상을 깨뜨린 그녀. 그런데 미소녀다? 그리고 나를 조...좋아한다고? 아니, 사랑한다고....?
+                                문제는, 나와 결혼하기 위해 앞집으로 이사 왔다는 '나리'가 싫지 않다는 것. &lt;이두나!&gt; 민송아 작가의 18금 두근두근 러브코미디.</p>
+                        </li>
+                        <li><a href="#"><img src="images/sto3.jpg" alt="thu2"></a>
+                            <a href="#">재벌집 막내아들</a>
+                            <p>JP</p>
+                            <p>13년 동안의 수고를 배신으로 돌려받다니!
+                                머슴처럼 살다 버려진 순양그룹의 실장, 윤현우.
+                                모든 게 끝났다 싶었을 즘, 순양그룹 진 회장의 손주 진도준으로 깨어난다!
+                                하지만 상속권과는 거리가 먼 재벌집 막내아들 진도준.
+                                과연 그는 가족 정치극에서 최후의 승자가 될 수 있을 것인가!</p>
+                        </li>
+                        <li><a href="#"><img src="images/sto5.jpg" alt="thu3"></a>
+                            <a href="#">연애혁명</a>
+                            <p>232</p>
+                            <p>평범하면서 금사빠인 고등학생 순정남 공주영은
+                                까칠하고 차가운 여학생 왕자림을 보고 사랑에 빠져버린다.
+                                너무 다른 둘, 괜찮을까?</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="friday">
+                    <h2><span>금요일</span> 추천 웹툰</h2>
+                    <ul>
+                        <li><a href="#"><img src="images/sto4.jpg" alt="fri1"></a>
+                            <a href="#">외모지상주의</a>
+                            <p>박태준</p>
+                            <p>못생기고 뚱뚱하다고 괴롭힘을 당하며 루저 인생만 살아온 내가 잘생겨졌다는 이유로 인싸가 됐다.
+                                어느 날 자고 일어났더니 갑자기 완벽한 외모와 몸을 지닌 사람이 되어 깨어난다면?</p>
+                        </li>
+                        <li><a href="#"><img src="images/omni6.jpg" alt="fri2"></a>
+                            <a href="#">언다잉</a>
+                            <p>임목원</p>
+                            <p>전국의 죽어가던 노인들의 병이 한순간에 싹 나았다면?
+                                노인 인구가 급증하고 사회적 비용은 폭발 직전!
+                                졸지에 노인들을 부양하게 된 젊은 사람들 사이에서 노인들이 버림받고 살해당하는 일도 심심찮게 벌어지게 되는데...
+                                죽어가던 사람들이 되살아난 기적인 줄 알았지만 재난인 이야기
+                                죽지않는 노인들, 기적일까 저주일까</p>
+                        </li>
+                        <li><a href="#"><img src="images/spt6.jpg" alt="fri3"></a>
+                            <a href="#">인피니티</a>
+                            <p>2오</p>
+                            <p>축구선수가 공을 무서워한다?!
+                                공만 오면 자동적으로 피하는 몸 때문에 괴로워하는 축구부 다민은 새로운 제안을 받는다.
+                                "야, 너 펜싱 해라!"
+                                인생 최대의 약점이 최대의 강점으로 인정받은 순간 다민은 새로운 세계에 발을 내딛는데...
+                                귀족 스포츠 펜싱계에 말도 안 되는 천재 등장!</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="saturday">
+                    <h2><span>토요일</span> 추천 웹툰</h2>
+                    <ul>
+                        <li><a href="#"><img src="images/sto6.jpg" alt="sat1"></a>
+                            <a href="#">99강화나무몽둥이</a>
+                            <p>홍실</p>
+                            <p>약육강식이 진리인 가상 현실 게임 '크로노 라이프'.
+                                허접이라며 무시만 당하던 '나'는 우연히 얻은 초보용 기본 무기 '나무 뭉둥이' 를 +99 강화까지 성공하게 되고,
+                                본인을 무시하던 놈들을 찾아다니며 몽둥이로 무자비하게 패기 시작하는데..!
+                                막장 스케일 사이다 액션 스타트!!</p>
+                        </li>
+                        <li><a href="#"><img src="images/co4.jpg" alt="sat2"></a>
+                            <a href="#">이십팔세기 광팬</a>
+                            <p>컷부</p>
+                            <p>망한 작가 이지음의 앞에 이십팔세기에서 지음의 광팬, 최강팬이 찾아온다. 강팬은 지음이 단명한다는 사실을 알려주고, 지음이 무병장수해서 다작할 수 있도록 돕겠다고 한다. 그런데 이럴 수가. 책 뿐만 아니라 인생까지 망할 것 같다.</p>
+                        </li>
+                        <li><a href="#"><img src="images/new3.jpg" alt="sat3"></a>
+                            <a href="#">더캐슬 - 귀안의 신부</a>
+                            <p>혜용</p>
+                            <p>그림 속에 숨어 사는 그림 도깨비를 보고 자란 유연. 왕세자와 딸을 혼인시키기 위해 유연의 눈이 필요하다는 최 회장에게 자신의 엄마를 살리는 조건으로 유연은 왕실을 상대로 한 결혼 사기극에 동참하기로 한다.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sunday">
+                    <h2><span>일요일</span> 추천 웹툰</h2>
+                    <ul>
+                        <li><a href="#"><img src="images/his4.jpg" alt="sun1"></a>
+                            <a href="#">일타강사 백사부</a>
+                            <p>팀 더 지크</p>
+                            <p>혈교 최고의 무공 교관, 시골 무관의 사부로 환생하다.
+                                그리고 정파 무림의 일타강사로!
+                                이름하여 백 사부.
+                                그가 이제 전 무림을 참교육한다!</p>
+                        </li>
+                        <li><a href="#"><img src="images/his3.jpg" alt="sun2"></a>
+                            <a href="#">천화서고 대공자</a>
+                            <p>128</p>
+                            <p>넉넉한 풍채가 매력적인 무림맹주 후공은
+                                어느 날 느닷없이 웬 비루먹을 청년의 몸에 들어오게 된다.                  
+                                청년의 이름은 범항.
+                                강호 3대 서고인 ‘천화서고’의 대공자이자
+                                답이 없는 자살희망자.</p>
+                        </li>
+                        <li><a href="#"><img src="images/spt3.jpg" alt="sun3"></a>
+                            <a href="#">가비지타임</a>
+                            <p>2사장</p>
+                            <p>한국 최초 한국형 고교스포츠 웹툰!
+                                열혈따윈 개나 줘, 낙오자들 뿐인 농구부의 운명은?</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="everyday">
+                    <h2><span>매일</span> 추천 웹툰</h2>
+                    <ul>
+                        <li><a href="#"><img src="images/test2.jpg" alt="eve1"></a>
+                            <a href="#">본투비갓</a>
+                            <p>턱점</p>
+                            <p>돈에 미친 양아치 선도부 ‘김태성’.
+                                어느 날 옆집으로 이사 온 무당 ‘화려한'을 만난 이후로 그의 주변에 무당이 하나둘씩 꼬이게 되고, 귀신에 씌인 존재가 태성을 공격하기 시작하는데…
+                                태성에게 요괴 '두억시니'를 빙의시키는 화려한.
+                                과연 태성은 두억시니와 함께 자신의 목숨을 지킬 수 있을까?</p>
+                        </li>
+                        <li><a href="#"><img src="images/act4.jpg" alt="eve2"></a>
+                            <a href="#">랭커</a>
+                            <p>신건</p>
+                            <p>극비리로 진행되는 멤버쉽 온라인 게임 &lt;랭커&gt;.
+                                우연히 랭커에 뛰어든 격투기선수 강준서.
+                                어느 순간부터 상대가 괴물로 보였던 준서는 자신의 플레이어인 정준의 목소리를 통해서 안정을 되찾고,
+                                정준과 함께하면서 증세를 치료하고자 마음먹는다.</p>
+                        </li>
+                        <li><a href="#"><img src="images/act1.jpg" alt="eve3"></a>
+                            <a href="#">더블클릭</a>
+                            <p>박수봉</p>
+                            <p>악명 높은 난이도를 가진 게임의 세계 랭킹 1위였던 지호.
+                                서비스 종료된 줄만 알았던 그 게임이 새롭게 돌아왔다!
+                                지호는 다시 한번 랭킹 1위를 꿈꾸며 게임 동아리에 입부한다.
+                                오랜만에 게임을 해도 살아있는 감각. 하지만 게임이 새롭게 변하면서 예상치 못한 약점이 생긴다.
+                                강한 상대를 마주할수록 열정이 끓어오르는 주인공의 프로게이머 도전기!</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 컨텐츠 영역 종료-->
+            <!-- 웹툰 바로가기 영역 시작 -->
+            <div id="goWebtoon">
+                <h2>웹툰 바로가기</h2>
+                <a href="#">#로맨스</a>
+                <a href="#">#판타지</a>
+                <a href="#">#액션</a>
+                <a href="#">#일상</a>
+                <a href="#">#스릴러</a>
+                <a href="#">#개그</a>
+                <a href="#">#무협/사극</a>
+                <a href="#">#드라마</a>
+                <a href="#">#감성</a>
+                <a href="#">#스포츠</a>
+                <a href="#">#드라마&영화 원작웹툰</a>
+                <a href="#">#먼치킨</a>
+                <a href="#">#학원로맨스</a>
+                <a href="#">#로판</a>
+                <a href="#">#게임판타지</a>
+                <a href="#">#고자극로맨스</a>
+                <a href="#">#성장드라마</a>
+                <a href="#">#역사물</a>
+                <a href="#">#레드스트링</a>
+                <a href="#">#해외작품</a>
+                <a href="#">#영화원작웹툰</a>
+            </div>
+            <div id="novel">
+                <h2>웹소설</h2>
+                <ul>
+                    <li><a href="#"><img src="images/novel1.jpg" alt="novel1"></a>
+                    <a href="#">화산귀환 [독점]</a></li>
+                    <li><a href="#"><img src="images/novel2.jpg" alt="novel2"></a>
+                    <a href="#">하녀와의 계약결혼 [독점]</a></li>
+                    <li><a href="#"><img src="images/novel3.jpg" alt="novel3"></a>
+                    <a href="#">임신 스캔들 [독점]</a></li>
+                    <li><a href="#"><img src="images/novel4.jpg" alt="novel4"></a>
+                    <a href="#">버림받고 흑막의 계약직 며느리로 살아남기 [독점]</a></li>
+                    <li><a href="#"><img src="images/novel5.jpg" alt="novel5"></a>
+                    <a href="#">뱀술 먹다 만독불침 독공천재</a></li>
+                    <li><a href="#"><img src="images/novel6.jpg" alt="novel6"></a>
+                    <a href="#">500조 재벌가 천재 아들</a></li>
+                    <li><a href="#"><img src="images/novel7.jpg" alt="novel7"></a>
+                    <a href="#">약빨로 천재 검사 [독점]</a></li>
+                    <li><a href="#"><img src="images/novel8.jpg" alt="novel8"></a>
+                    <a href="#">남주의 애인을 꼬셔버렸습니다 [독점]</a></li>
+                    <li><a href="#"><img src="images/novel9.jpg" alt="novel9"></a>
+                    <a href="#">결합충동 [독점]</a></li>
+                    <li><a href="#"><img src="images/novel10.jpg" alt="novel10"></a>
+                    <a href="#">공작가의 남장 하인이 되었다 [독점]</a></li>
+                    <li><a href="#"><img src="images/novel11.jpg" alt="novel11"></a>
+                    <a href="#">66666년 만에 환생한 흑마법사 [독점]</a></li>
+                    <li><a href="#"><img src="images/novel12.jpg" alt="novel12"></a>
+                    <a href="#">밀어낼수록, 더 [독점]</a></li>
+                    <li><a href="#"><img src="images/novel13.jpg" alt="novel13"></a>
+                    <a href="#">회귀자는 끝내고 싶다 [독점]</a></li>
+                    <li><a href="#"><img src="images/novel14.jpg" alt="novel14"></a>
+                    <a href="#">아홉 번째 조선 [독점]</a></li>
+                    <li><a href="#"><img src="images/novel15.png" alt="novel15"></a>
+                    <a href="#">보이는 사랑 [독점]</a></li>
+                    <li><a href="#"><img src="images/novel16.jpg" alt="novel16"></a>
+                    <a href="#">가면의 세계</a></li>
+                </ul>
+                <div class="novel_btn">
+                    <div class="novel_button"></div>
+                    <div class="novel_button"></div>
+                    <div class="novel_button"></div>
+                    <div class="novel_button"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 웹툰 바로가기 영역 종료 -->
+        <!-- 사이드 영역 시작-->
+        <!-- 웹툰 올리기 영역 시작 -->
+        <aside id="side">
+            <div class="updateWebtoon">
+                <a href="login.html"><img src="images/updateWeb.PNG" alt="updateWeb" width="240" height="42"></a>
+                <p><a href="#"></a></p>
+            </div>
+        <!-- 웹툰 올리기 영역 종료 -->
+
+        <!-- 이미지 영역 시작 -->
+         <div class="sideImgArea">
+            <div class="newBestChallenge">
+                <h3><span>새로운</span> 배스트 도전 만화</h3>
+                <a href="#"><img src="images/thr6.jpg" alt="bestChall" width="202" height="110"></a>
+                <a href="#">한 달 뒤에 죽여주세요</a>
+                <a href="#">죽고 싶은데 스스로 죽을 용기는 없던 그 날. 살인자에게 한 달 뒤에 죽여달라고 부탁한 그녀의 이야기.</a>
+            </div>
+            <img src="images/adimg.PNG" alt="ad">
+         </div>   
+        <!-- 이미지 영역 종료-->
+        
+        <!-- 인기급상승 웹툰 영역 시작 -->
+        <div class="timeRank">
+            <h3>인기급상승 웹툰</h3>
+            <div class="timeRankArea">
+                <div class="timeRankh4">
+                    <h4><a href="#hotRank">인기순</a></h4>
+                    <h4><a href="#updateRank">업데이트 순</a></h4>
+                </div>                
+                <section id="hotRank" class="allRank"> 
+                    <h4 class="rankHidden">인기순</h4>                  
+                    <ol>
+                        <li><a href="#">퀘스트지상주의-71화 오랜만의 자극이네</a></li>
+                        <li><a href="#">윈드브레이커-4부 - 51화 좋은 약</a></li>
+                        <li><a href="#">신의 탑-3부 135화</a></li>
+                        <li><a href="#">소녀의세계-2부 134화</a></li>
+                        <li><a href="#">신화급 귀속 아이템을 손에 넣었다-38화</a></li>
+                        <li><a href="#">뷰티풀 군바리-368화_대형사고 (3)</a></li>
+                        <li><a href="#">팔이피플-72화 - 판결</a></li>
+                        <li><a href="#">똑 닮은 딸-76화</a></li>
+                        <li><a href="#">별난식당-3화 돼지국밥</a></li>
+                        <li><a href="#">장씨세가 호위무사-198화</a></li>
+                    </ol>
+                </section>
+                <section id="updateRank" class="allRank">
+                    <h4 class="rankHidden">업데이트순</h4>
+                    <ol>
+                        <li><a href="#">히어로메이커-거래</a></li>
+                        <li><a href="#">신의 탑 -3부 135화</a></li>
+                        <li><a href="#">꿈의 기업-6부 10화</a></li>
+                        <li><a href="#">수영만화일기 -시즌2 35화 일상의 행복</a></li>
+                        <li><a href="#">이제야 연애-65화</a></li>
+                        <li><a href="#">악녀 18세 공략기-61화</a></li>
+                        <li><a href="#">뷰티풀 군바리-368화_대형사고 (3)</a></li>
+                        <li><a href="#">소녀의 세계-2부 134화</a></li>
+                        <li><a href="#">앵무살수-시즌3 34화</a></li>
+                        <li><a href="#">팔이피플-72화</a></li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+        <!-- 인기급상승 웹툰 영역 종료 -->
+        <!-- 공지사항 웹툰 영역 시작 -->
+        <div class="notice">
+            <h3>공지사항</h3>
+            <ul>
+                <li><a href="notice.html#notice1">네이버웹툰 연재 작가를 모십니다!</a></li>
+                <li><a href="notice.html#notice2">웹소설원작 웹툰을 위한 각색/작화 작가를 모십니다!</a></li>
+                <li><a href="notice.html#notice3">#내돈내툰, 우리가 웹툰을 즐기는 방법</a></li>
+                <li><a href="notice.html#notice4"><strong>베스트도전, 도전만화 관련 서비스 개선 사항 안내</strong></a></li>
+                <li><a href="notice.html#notice5">2023년 2월 유료화 전환 작품 안내</a></li>
+            </ul>
+            <a href="notice.html" class="more" title="공지사항 더보기">더보기</a>
+        </div>
+        <!-- 공지사항 웹툰 영역 종료 -->
+        <!-- 나머지 사이드 영역 시작 -->
+        <div id="etcSide">
+            <a href="#"><img src="images/gonggo.PNG" alt="gonggo"></a>
+            <a href="#"><img src="images/gonggo2.PNG" alt="gonggo2"></a>
+            <a href="#"><img src="images/gonggo3.PNG" alt="gonggo3"></a>
+            <a href="#">웹툰 고객센터</a>
+        </div>
+        <!-- 나머지 사이드 영역 종료 -->
+        <span class="left_control">&lt;</span>
+        <span class="right_control">&gt;</span>
+        <span class="show_all">펼쳐보기</span>
+        <span class="left_novel">&lt;</span>
+        <span class="right_novel">&gt;</span>
+        </aside>
+        <!-- 사이드 영역 종료 -->
+
+        <!-- 푸터 영역 시작 -->
+        <footer id="footer">
+            <div id="footerInner">
+                <div class="copyArea">
+                    <div class="webtoon_copy">
+                        <ul>
+                            <li><a href="#">네이버웹툰 이용약관</a></li>
+                            <li><a href="#">전용상품권 이용약관</a></li>
+                            <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                            <li><a href="#">청소년보호정책</a></li>
+                            <li><a href="#">웹툰 고객센터</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">광고.사업문의</a></li>
+                        </ul>
+                        <address><a href="#">
+                            &copy; NAVER WEBTOON Limited
+                        </a></address>
+                    </div>
+                    <div class="naver_copy">
+                        <ul>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                            <li><a href="#">책임의 한계와 법적고지</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">결제도용신고</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">저작권침해 신고</a></li>
+                        </ul>
+                        <address><a href="#">
+                            &copy; NAVER CORP
+                        </a></address>
+                    </div>
+                </div>
+                <div class="compony_info">
+                    <ul>
+                        <li><a href="#">사업자등록번호 669-86-01888</a></li>
+                        <li><a href="#">통신판매업 신고번호 2020-성남분당B-0719(사업자정보확인)</a></li>
+                        <li><a href="#">대표이사 김준구</a></li>
+                        <li><a href="#">호스팅사업자 네이버비즈니스플랫폼</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">주소 경기도 성남시 분당구 분당내곡로 131 판교테크원 타워1, 11-12층</a></li>
+                        <li><a href="#">고객센터 1588-3820</a></li>
+                        <li><a href="#">이메일 ccnaver@naver.com</a></li>
+                    </ul>
+                    <p>모든 콘텐츠의 저작권은 저작권자 또는 제공처에 있으며, 이를 무단으로 이용하는 경우 관련 법령에 따라 법적 책임을 질 수 있습니다.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- 푸터 영역 종료 -->
+    </div>
+    <!-- wrapper 영역 종료 -->
+    <!-- fixed  -->
+    <a href="#header" id="gotop">↑</a>
+    <button type="button" id="changeLight">다크 모드로 보기</button>
+</body>
+</html>

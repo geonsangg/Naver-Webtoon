@@ -1,0 +1,243 @@
+@charset "utf-8";
+/*헤더 부분 */
+.mainMenu li:nth-child(2) {
+    background-color: rgb(0, 213, 100);
+}
+.mainMenu li:nth-child(2) a {
+    color: #fff;
+}
+/* 컨텐츠 영역 시작 */
+#contents {
+    display: flex;
+    flex-wrap: wrap;
+    width: 710px;
+    height: 795px;
+    overflow: hidden;
+    position: relative;
+}
+#contents div {
+    position: relative;
+}
+#contents .cuttoon {
+    margin-top: 20px;
+}
+#contents h2 {
+    font-weight: bold;
+    font-size: 18px;
+}
+#contents h2 span {
+    color: rgb(0, 213, 100);
+}
+#contents ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#contents ul li:first-child {
+    margin-right: 17px;
+}
+#contents ul li:last-child {
+    margin-left: 17px;
+}
+#contents li {
+    display: inline-block;
+    width: 220px;
+    height: 240px;
+}
+#contents li a {
+    font-weight: bold;
+    font-size: 15px;
+}
+#contents ul li p:first-of-type {
+    color: #999999;
+    font-size: 12px;
+}
+#contents ul li p:last-of-type {
+    color: #343434;
+    font-size: 13px;
+    display:-webkit-box; 
+    word-wrap:break-word; 
+    -webkit-line-clamp:3; 
+    -webkit-box-orient:vertical; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    height:54px;
+}
+/* 컨텐츠 영역 종료 */
+/* 웹툰 바로가기 영역 시작 */
+#goWebtoon {
+    width: 710px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#goWebtoon h2 {
+    width: 710px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 5px 0 20px;
+}
+#goWebtoon a {
+    color: #666;
+    height: 35px;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #ddd;
+    margin: 0 6px 10px 0;
+    padding: 0 10px;
+    line-height: 35px;
+}
+/* 웹툰 바로가기 영역 종료 */
+/* 웹소설 영역 시작 */
+#novel {
+    width: 710px;
+    margin-top: 10px;
+    position: relative;
+}
+#novel h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+#novel ul {
+    display: flex;
+    overflow: hidden;
+}
+#novel li:first-child {
+    margin-left: 10px;
+}
+#novel li:not(:first-child){
+    margin-left: 30px;
+}
+#novel li {
+    width: 148px;
+    height: 292px;
+    display: inline-block;  
+    position: relative;
+}
+#novel img{
+    width: 148px;
+    height: 222px;
+}
+#novel a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-word;
+    display: -webkit-box;
+   -webkit-line-clamp: 2; 
+   -webkit-box-orient: vertical
+}
+#novel li a:nth-child(2) {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 10px;
+}
+.novel_btn {
+    display: flex;
+    position: relative;
+    height: 15px;
+    bottom: 17px;
+    overflow: hidden;
+
+}
+.novel_button {
+    position: relative;
+    background: url(../images/point_button.png);
+    width: 12px;
+    height: 46px;
+    left: 325px;
+}
+/* 웹소설 영역 종료 */
+/* 사이드 영역 시작 */
+#side {
+    position: relative;
+}
+.left_control {
+    position: absolute;
+    top: 340px;
+    left: -780px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 213, 100);
+    cursor: pointer;
+}
+.right_control {
+    position: absolute;
+    top: 340px;
+    left: -43px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 213, 100);
+    cursor: pointer;
+}
+.left_novel {
+    position: absolute;
+    bottom: 180px;
+    left: -780px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 213, 100);
+    cursor: pointer;
+}
+.right_novel {
+    position: absolute;
+    bottom: 180px;
+    left: -43px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 213, 100);
+    cursor: pointer;
+}
+.show_all {
+    position: absolute;
+    top: 800px;
+    left: -450px;
+    width: 109px;
+    height: 35px;
+    background-color: rgb(0, 213, 100);
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+#side .sideImgArea {
+    margin-top: 10px;
+}
+#side .newBestChallenge {
+    width: 240px;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    background-color: rgb(249, 249, 251);
+    border:1px solid #ccc;
+}
+#side .newBestChallenge h3 {
+    font-size: 16px;
+    margin: 15px 0 0 19px;
+}
+#side .newBestChallenge h3 span {
+    color:  rgb(0, 213, 100);
+}
+#side .newBestChallenge a:first-of-type{
+    margin: 0px 19px;
+}
+#side .newBestChallenge a:nth-of-type(2) {
+    color: #000;
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: 19px;
+}
+#side .newBestChallenge a:last-of-type {
+    width: 202px;
+    color: rgb(179, 181, 183);
+    font-size: 12px;
+    margin-left: 19px;
+}
+/* 사이드 영역 종료 */

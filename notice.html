@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver웹툰</title>
+    <link rel="shortcut icon" href="images/webtoon.png">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/notice.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/notice.js"></script>
+</head>
+<body>
+    <!-- wrapper 영역 시작 -->
+    <div id="wrapper">
+        <!-- 헤더 부분 시작 -->
+        <header id = "header">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="images/webtoon.png" alt="webtoon">
+                </a>
+            </h1>    
+            <form action="search.jsp" method="get" id="searchForm" name="searchForm">
+                <fieldset>
+                    <legend>검색</legend>
+                        <div class="search_box">
+                            <label for="searchWt"></label>
+                            <input type="text" id="searchWt" name="searchWt" placeholder="제목 / 작가로 검색할 수 있습니다.">
+                            <button type="button">검색</button>
+                        </div>
+                </fieldset>
+            </form>
+            <div class="login">
+                <a href="login.html">로그인</a>
+                <a href="join.html">회원가입</a>
+            </div>
+            <nav>
+                <ul class="mainMenu">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="webtoon.html">웹툰</a></li>
+                    <li><a href="playground.html">놀이터</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                    <li><a href="login.html">마이페이지</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 헤더 부분 종료 -->
+        <!-- 공지사항 영역 시작 -->
+        <div id="noticeArea">
+            <h2>공지사항</h2>
+            <dl>
+                <div id="notice4">
+                    <dt>베스트도전, 도전만화 관련 서비스 개선 사항 안내<br>
+                        <span>2022.11.01</span></dt>
+                    <dd>
+                        안녕하세요, 네이버웹툰입니다.<br><br>
+                        베스트도전, 도전만화 작품의 탐색 및 감상 환경 개선을 위한 변경 사항에 대해 안내드립니다.<br><br>
+                        <span>네이버웹툰 APP &gt; 베스트도전 작품의 회차목록에서 작품별 조회수와 관심독자수를 볼 수 있습니다! (APP)</span> <br>
+                        ▷ 내가 감상하는 작품, 내 작품은 얼마나 많은 사람들이 보고 있을까요? 지금 웹툰 앱에서 확인해보세요.<br>
+                        ▷ 관심 작품으로 등록하면 회차 업데이트 알림을 드려요. 아직 관심작품으로 등록하지 못한 작품은 없는지 살펴보세요!<br><br>
+                        <span>베스트도전, 도전만화 댓글에도 답글을 작성하고, 답글과 좋아요 알림을 받을 수 있습니다. (PC/MW/APP)</span><br>
+                        ▷ 좋아하는 작품에 대해 더 활발하게 의견을 나누고, 내 작품을 감상중인 독자들과도 적극적으로 소통하세요.<br>
+                        ▷ 내가 베스트도전/도전작품에 남긴 댓글에 답글과 좋아요가 달리면 알려드릴게요. (푸시알림은 네이버웹툰 APP에서 제공됩니다.)<br><br>
+                        <span>베스트도전, 도전만화에서 작성한 댓글도 MY에서 모아볼 수 있습니다. (APP)</span><br>
+                        ▷ 웹툰 앱 MY 댓글에서 베도/도전 탭을 확인해보세요.<br><br>
+                        베스트도전, 도전만화 작품들이 더욱 사랑받을 수 있도록, 작품 창작 및 감상 환경 개선을 위한 네이버웹툰의 고민은 계속됩니다.<br>
+                        앞으로도 많은 관심과 응원 부탁드립니다!<br><br>
+                        네이버웹툰 APP의 변경사항은 최신버전인 v2.2.0 부터 확인하실 수 있습니다.<br><br>
+                        감사합니다.<br>
+                        네이버웹툰 드림
+                    </dd>
+                </div>
+                <div>
+                    <dt>네이버웹툰 안드로이드앱 쿠키 가격 변경 일정 안내<br>
+                        <span>2022.05.29</span></dt>
+                    <dd>
+                        안녕하세요, 네이버웹툰(유) 입니다. <br>
+                        네이버웹툰 서비스를 이용해주셔서 감사드립니다.<br><br>
+                        네이버웹툰 안드로이드앱에서 구매하시는 쿠키의 가격 변경 적용 일자 안내 드립니다.<br><br>
+                        <span>적용일자</span><br>
+                        - 2022년 5월 30일 부터<br><br>
+                        기존(5/11)에 안내 드린 변경 내용은 동일하며, 적용 일자에만 변경이 있는 점 참고 부탁 드립니다.<br>
+                        네이버웹툰 ​웹서비스와 쿠키자동충전을 통해서는 기존과 동일하게 쿠키를 개당 100원으로 구매하실 수 있습니다.<br><br>
+                        문의사항 있으신 경우 언제든지 고객센터로 문의 부탁 드립니다.<br>
+                        감사합니다.
+                    </dd>
+                </div>
+                <div id="notice3">
+                    <dt>#내돈내툰, 우리가 웹툰을 즐기는 방법<br>
+                        <span>2021.11.30</span></dt>
+                    <dd class="imgdd">
+                        <img src="images/notice1.png" alt="notice1">
+                    </dd>
+                    <dd class="open">펼쳐보기</dd>
+                </div>
+                <div id="notice1">
+                    <dt>네이버웹툰 연재 작가를 모십니다!<br>
+                        <span>2021.08.18</span>
+                    </dt>
+                    <dd class="imgdd">
+                        <img src="images/notice2_0.jfif" alt="notice2_0">
+                        <img src="images/notice2.jfif" alt="notice2">                    
+                    </dd>
+                    <dd class="open">펼쳐보기</dd>              
+                </div>
+                <div>
+                    <dt>도전만화 신고 오남용에 관한 징계방침 안내<br>
+                        <span>2013.02.12</span></dt>
+                    <dd>안녕하세요, 네이버 만화 운영자입니다.<br><br>
+                        최근 도전만화/베스트도전만화 게시물에 대한 악의적인 신고 요청이 다수 접수되어,<br>
+                        정상적인 게시물임에도 불구, 게시물이 자동 임시블라인드 처리되어<br>
+                        독자분들이 정상적으로 컨텐츠를 이용하기 어려운 경우가 발생하고 있습니다.<br><br>
+                        이에, &lt;신고하기&gt; 오남용 행위에 관한 운영방침 안내를 드리고자 합니다.<br><br><br>
+                        ㅇ 도전만화/베스트도전만화의 &lt;신고하기&gt; 기능은 선정적이거나 폭력적인 게시물을 포함한 불건전 게시물에 대해서만 접수가 가능합니다.<br>
+                        ㅇ 작가/작품에 대한 악의적인 의도로 특정 작품의 여러 회차를 반복 신고하는 오남용 행위를 삼가주시기 바랍니다.<br>
+                        ㅇ 신고 오남용 내용이 확인되면 허위 신고 이용자에게 '글쓰기 제한','신고하기 제한' 등의 징계조치가 적용됩니다.<br><br><br>
+                        현재 도전만화/베스트도전만화 게시물에 대해서는<br>
+                        검수 담당자가 신속하게 게시물 내용을 확인하여 노출 여부를 검토하고 있습니다.<br><br>
+                        건전하고 즐거운 만화서비스를 위한 노력에<br>
+                        이용자 여러분의 참여를 부탁 드립니다.<br><br>
+                        감사합니다.<br>
+                        네이버 만화 드림</dd>
+                </div>
+                <div id="notice5">
+                    <dt>2023년 2월 유료화 전환 작품 안내<br>
+                        <span>2023.01.31</span>
+                    </dt>
+                    <dd>작가님과의 협의에 따라<br>
+                        2023년 2월 14일 (화)부터 유료로 전환될 예정인 작품들 안내 드립니다.<br><br>
+                        1. 갓 오브 하이스쿨<br>
+                        2. 구사일생 로맨스<br>
+                        3. 나는 어디에나 있다<br>
+                        4. 나의 플랏메이트<br>
+                        5. 또 다른 사랑<br>
+                        6. 모두 너였다<br>
+                        7. 버그: 스티그마<br>
+                        8. 이븐 모어<br>
+                        9. 인간의 온도<br>
+                        10. 잿빛오름<br>
+                        11. 좋아해 아니 싫어해<br>
+                        12. 중증외상센터 : 골든 아워<br>
+                        13. 태백 : 튜토리얼 맨<br>
+                        14. 하나in세인<br></dd>
+                </div>
+                <div id="notice2">
+                    <dt>웹소설 원작 웹툰을 위한 각색/작화 작가를 모십니다!<br>
+                        <span>2023.02.27</span></dt>
+                    <dd class="imgdd">
+                        <img src="images/notice3.jfif" alt="notice3">
+                        <img src="images/notice4.jfif" alt="notice4">
+                    </dd>
+                    <dd class="open">펼쳐보기</dd>
+                </div>
+                <div>
+                    <dt>&lt;엔드리스&gt; 서비스 종료 안내드립니다<br>
+                        <span>2023.01.31</span></dt>
+                    <dd>안녕하세요,<br>
+                        네이버웹툰 서비스 운영자입니다.<br><br>
+                        네이버웹툰에서 서비스하고 있던 작품 &lt;엔드리스&gt;가<br>
+                        전송권 확보 기간 만료 및 작가님의 요청에 따라 2023년 2월 3일부로 서비스가 종료됨을 안내드립니다.<br><br>
+                        그동안 &lt;엔드리스&gt;를 사랑해주신 모든 분들께 감사의 말씀드리며,<br>
+                        앞으로 더욱 좋은 서비스로 보답드릴 수 있도록 최선을 다하겠습니다.<br>
+                        감사합니다.
+                    </dd>
+                </div>
+                <div>
+                    <dt>[공지] 쿠키 결제 오류 안내 (복구완료)<br>
+                        <span>2023.01.12</span></dt>
+                    <dd>안녕하세요, 네이버웹툰입니다.<br><br>
+                        1월 12일(목) 오후 3시 26분부터 오후 4시 25분사이 발생한 네이버페이 결제 오류로 인해<br>
+                        쿠키 결제 및 충전이 정상적으로 진행되지 않는 현상이 발생하였습니다.<br><br>
+                        해당 오류는 복구 완료되어 현재는 정상적으로 쿠키 결제 진행이 가능합니다.<br><br>
+                        서비스 이용에 불편을 드려 대단히 죄송합니다.<br>
+                        보다 안정적으로 서비스를 제공할 수 있도록 최선을 다하겠습니다.<br><br>
+                        감사합니다.
+                    </dd>
+                </div>
+                <div>
+                    <dt>[공지] 네이버페이 '문화상품권' 결제수단 중 '지류/온라인' 이용 불가 안내 (2023/1/1 부터)<br>
+                        <span>2022.12.19</span></dt>
+                    <dd>안녕하세요. 네이버웹툰입니다.<br>
+                        '컬쳐랜드 문화상품권'에서 2023년 1월 1일 이후 발행되는 온라인/지류 상품권에 대한 충전을 지원하지 않게 됨에 따라,<br>
+                        네이버페이 디지털콘텐츠 결제에서도 아래와 같이 변경됨을 안내 드립니다. <br><br>
+                        <span>- 2023/1/1 이후 발행된 지류/온라인 문화상품권은 이용 불가</span><br>
+                         (2022/12/31 이전에 발행된 지류/온라인 문화상품권에 대해서는 기존과 동일하게 컬쳐랜드에서 충전 후 이용 가능)<br><br>
+                        컬쳐랜드 상품권(모바일 상품권)은 '23년 1월 1일 이후에도 기존과 동일하게 이용 가능한 점 참고 부탁드립니다.<br>
+                        추가로 기존 네이버페이 '문화상품권' 결제수단은 '23년 1월 1일부로 '컬쳐랜드 상품권'으로 명칭이 변경될 예정입니다.<br><br>
+                        자세한 내용은 아래 컬쳐랜드 공지사항을 통해 확인 부탁드립니다.<br><br>
+                        더욱 나은 서비스 제공으로 보답하는 네이버웹툰이 되겠습니다.<br><br>
+                        감사합니다.<br> 
+                        네이버웹툰 드림
+                    </dd>
+                </div>
+                <div>
+                    <dt>네이버웹툰 회원 DB 작업으로 인한 회원 서비스 일시중단 안내 (12/6)<br>
+                        <span>2022.12.02</span></dt>
+                    <dd>안녕하세요, 네이버웹툰입니다.<br><br>
+                        12/6(화) 새벽 네이버웹툰 회원 업그레이드 작업이 있을 예정입니다.<br>
+                        작업 시간동안 네이버웹툰 서비스의 회원 가입 및 해지, 성인인증 등의 일부 서비스를 이용할 수 없사오니 참고 부탁드립니다.<br><br>
+                        <span>서비스 이용 중단 일정 : 22년 12월 6일 (화) 03:00 ~ 05:00 (2시간)</span><br>
+                        *  작업 상황에 따라 점검 일정은 변동될 수 있습니다.<br>
+                        이용에 불편을 드려 죄송합니다.<br>
+                        앞으로 더 좋은 서비스로 보답하겠습니다.<br><br>
+                        감사합니다.
+                    </dd>
+                </div>
+                <div>
+                    <dt>&lt;홍예&gt; 서비스종료 안내드립니다.<br>
+                        <span>2022.10.25</span></dt>
+                    <dd>안녕하세요.<br>
+                        네이버웹툰 서비스 운영자입니다.<br><br>
+                        네이버웹툰에서 서비스하고 있던 작품 &lt;홍예&gt;가 2022년 11월 1일부로 서비스 종료됨을 안내드립니다.<br>
+                        그동안 &lt;홍예&gt;를 사랑해주신 모든 분들께 감사의 말씀드리며,<br>
+                        앞으로 더욱 좋은 서비스 보답드릴 수 있도록 최선을 다하겠습니다.<br><br>
+                        감사합니다.
+                    </dd>
+                </div>
+                <div>
+                    <dt>&lt;가우스전자&gt; 유료화 안내드립니다.<br>
+                        <span>2022.09.20</span></dt>
+                    <dd>안녕하세요,<br>
+                        네이버웹툰 서비스 운영자입니다.<br><br>
+                        &lt;가우스전자 시즌1~2&gt;, &lt;가우스전자 시즌3~4&gt;는<br>
+                        작가님과의 협의에 따라<br>
+                        2022년 9월 21일부로 &lt;가우스전자&gt;로 통합유료화 예정임을 안내드립니다.<br><br>
+                        &lt;가우스전자 시즌1~2[단행본]&gt;을 소장하신 경우,<br>
+                        해당 컨텐츠는 서비스 내 보관함 메뉴에서 열람 가능한 점 참고 부탁드립니다.<br><br>
+                        감사합니다.<br>
+                    </dd>
+                </div>
+                <div>
+                    <dt>&lt;일상날개짓&gt; 8월 유료화 안내드립니다.
+                        <span>2022.08.18</span>
+                    </dt>
+                    <dd>안녕하세요<br>
+                        네이버웹툰 서비스 운영자입니다.<br><br>
+                        &lt;일상날개짓&gt;은 작가님과의 협의에 따라<br>
+                        2022년 8월 31일 (수) 부터 유료로 전환될 예정입니다. <br><br>
+                        감사합니다. 
+                    </dd>
+                </div>
+            </dl>
+        </div>
+        <!-- 공지사항 영역 종료 -->
+        <!-- 사이드 영역 시작-->
+        <!-- 웹툰 올리기 영역 시작 -->
+        <aside id="side">
+            <div class="updateWebtoon">
+                <a href="login.html"><img src="images/updateWeb.PNG" alt="updateWeb" width="240" height="42"></a>
+                <p><a href="#"></a></p>
+            </div>
+            <!-- 웹툰 올리기 영역 종료 -->
+
+            <!-- 이미지 영역 시작 -->
+            <div class="sideImgArea">
+                <div class="newBestChallenge">
+                    <h3><span>새로운</span> 배스트 도전 만화</h3>
+                    <a href="#"><img src="images/thr6.jpg" alt="bestChall" width="202" height="110"></a>
+                    <a href="#">한 달 뒤에 죽여주세요</a>
+                    <a href="#">죽고 싶은데 스스로 죽을 용기는 없던 그 날. 살인자에게 한 달 뒤에 죽여달라고 부탁한 그녀의 이야기.</a>
+                </div>
+                <img src="images/adimg.PNG" alt="ad">
+            </div>   
+            <!-- 이미지 영역 종료-->
+            
+            <!-- 인기급상승 웹툰 영역 시작 -->
+            <div class="timeRank">
+                <h3>인기급상승 웹툰</h3>
+                <div class="timeRankArea">
+                    <div class="timeRankh4">
+                        <h4><a href="#hotRank">인기순</a></h4>
+                        <h4><a href="#updateRank">업데이트 순</a></h4>
+                    </div>                
+                    <section id="hotRank" class="allRank"> 
+                        <h4 class="rankHidden">인기순</h4>                  
+                        <ol>
+                            <li><a href="#">퀘스트지상주의-71화 오랜만의 자극이네</a></li>
+                            <li><a href="#">윈드브레이커-4부 - 51화 좋은 약</a></li>
+                            <li><a href="#">신의 탑-3부 135화</a></li>
+                            <li><a href="#">소녀의세계-2부 134화</a></li>
+                            <li><a href="#">신화급 귀속 아이템을 손에 넣었다-38화</a></li>
+                            <li><a href="#">뷰티풀 군바리-368화_대형사고 (3)</a></li>
+                            <li><a href="#">팔이피플-72화 - 판결</a></li>
+                            <li><a href="#">똑 닮은 딸-76화</a></li>
+                            <li><a href="#">별난식당-3화 돼지국밥</a></li>
+                            <li><a href="#">장씨세가 호위무사-198화</a></li>
+                        </ol>
+                    </section>
+                    <section id="updateRank" class="allRank">
+                        <h4 class="rankHidden">업데이트순</h4>
+                        <ol>
+                            <li><a href="#">히어로메이커-거래</a></li>
+                            <li><a href="#">신의 탑 -3부 135화</a></li>
+                            <li><a href="#">꿈의 기업-6부 10화</a></li>
+                            <li><a href="#">수영만화일기 -시즌2 35화 일상의 행복</a></li>
+                            <li><a href="#">이제야 연애-65화</a></li>
+                            <li><a href="#">악녀 18세 공략기-61화</a></li>
+                            <li><a href="#">뷰티풀 군바리-368화_대형사고 (3)</a></li>
+                            <li><a href="#">소녀의 세계-2부 134화</a></li>
+                            <li><a href="#">앵무살수-시즌3 34화</a></li>
+                            <li><a href="#">팔이피플-72화</a></li>
+                        </ol>
+                    </section>
+                </div>
+            </div>
+            <!-- 인기급상승 웹툰 영역 종료 -->
+            <!-- 나머지 사이드 영역 시작 -->
+            <div id="etcSide">
+                <a href="#"><img src="images/gonggo.PNG" alt="gonggo"></a>
+                <a href="#"><img src="images/gonggo2.PNG" alt="gonggo2"></a>
+                <a href="#"><img src="images/gonggo3.PNG" alt="gonggo3"></a>
+                <a href="#">웹툰 고객센터</a>
+            </div>
+        </aside>
+        <!-- 사이드 영역 종료 -->
+
+        <!-- 푸터 영역 시작 -->
+        <footer id="footer">
+            <div id="footerInner">
+                <div class="copyArea">
+                    <div class="webtoon_copy">
+                        <ul>
+                            <li><a href="#">네이버웹툰 이용약관</a></li>
+                            <li><a href="#">전용상품권 이용약관</a></li>
+                            <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                            <li><a href="#">청소년보호정책</a></li>
+                            <li><a href="#">웹툰 고객센터</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">광고.사업문의</a></li>
+                        </ul>
+                        <address><a href="#">
+                            &copy; NAVER WEBTOON Limited
+                        </a></address>
+                    </div>
+                    <div class="naver_copy">
+                        <ul>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                            <li><a href="#">책임의 한계와 법적고지</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">결제도용신고</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">저작권침해 신고</a></li>
+                        </ul>
+                        <address><a href="#">
+                            &copy; NAVER CORP
+                        </a></address>
+                    </div>
+                </div>
+                <div class="compony_info">
+                    <ul>
+                        <li><a href="#">사업자등록번호 669-86-01888</a></li>
+                        <li><a href="#">통신판매업 신고번호 2020-성남분당B-0719(사업자정보확인)</a></li>
+                        <li><a href="#">대표이사 김준구</a></li>
+                        <li><a href="#">호스팅사업자 네이버비즈니스플랫폼</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">주소 경기도 성남시 분당구 분당내곡로 131 판교테크원 타워1, 11-12층</a></li>
+                        <li><a href="#">고객센터 1588-3820</a></li>
+                        <li><a href="#">이메일 ccnaver@naver.com</a></li>
+                    </ul>
+                    <p>모든 콘텐츠의 저작권은 저작권자 또는 제공처에 있으며, 이를 무단으로 이용하는 경우 관련 법령에 따라 법적 책임을 질 수 있습니다.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- 푸터 영역 종료 -->
+    </div>
+    <!-- wrapper 영역 종료 -->
+    <!-- fixed  -->
+    <a href="#header" id="gotop">↑</a>
+    <button type="button" id="changeLight">다크 모드로 보기</button>
+</body>
+</html>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver웹툰</title>
+    <link rel="shortcut icon" href="images/webtoon.png">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <!-- wrapper 영역 시작 -->
+    <div id="wrapper">
+        <!-- 헤더 부분 시작 -->
+        <header id = "header">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="images/webtoon.png" alt="webtoon">
+                </a>
+            </h1>    
+            <form action="search.jsp" method="get" id="searchForm" name="searchForm">
+                <fieldset>
+                    <legend>검색</legend>
+                        <div class="search_box">
+                            <label for="searchWt"></label>
+                            <input type="text" id="searchWt" name="searchWt" placeholder="제목 / 작가로 검색할 수 있습니다.">
+                            <button type="button">검색</button>
+                        </div>
+                </fieldset>
+            </form>
+            <div class="login">
+                <a href="login.html">로그인</a>
+                <a href="join.html">회원가입</a>
+            </div>
+            <nav>
+                <ul class="mainMenu">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="webtoon.html">웹툰</a></li>
+                    <li><a href="playground.html">놀이터</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                    <li><a href="login.html">마이페이지</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 헤더 부분 종료 -->
+        <!-- 컨텐츠 영역 시작 -->
+        <div id="contentsArea">
+
+        <!-- 트레일 영역 시작 -->
+        <div id="trail">
+            <h2>&nbsp;&nbsp;베스트웹툰 트레일영상</h2>
+            <video controls autoplay muted loop width="690">
+                    <source src="images/trailer.mp4" type="video/mp4">
+            </video>
+        </div>
+        <!-- 트레일 영역 종료 -->
+            <!-- 비주얼 영역 시작 -->
+            <div id="visual">
+                    <h2>이달의 베스트 웹툰</h2>
+                    <span class="whatVote"></span>
+                    <button type="submit" class="voteOk">투표하기</button>
+                    <ul id="voteMenu">
+                        <li>
+                            <label for="webt1"><input type="radio" id="webt1" name="voteWt" value="내 남편과 결혼해줘" checked><img src="images/topimg1.jpg" alt="top1"></label>  
+                            <div class="votecontent">
+                                <h6>내 남편과 결혼해줘</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="webt2"><input type="radio" id="webt2" name="voteWt" value="전지적 독자 시점"><img src="images/topimg2.jpg" alt="top2"></label>
+                            <div class="votecontent">
+                                <h6>전지적 독자 시점</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="webt3"><input type="radio" id="webt3" name="voteWt" value="헬퍼2 : 킬베로스"><img src="images/topimg3.jpg" alt="top3"></label>
+                            <div class="votecontent">
+                                <h6>헬퍼2 : 킬베로스</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="webt4"><input type="radio" id="webt4" name="voteWt" value="백XX"><img src="images/topimg4.jpg" alt="top4"></label>
+                            <div class="votecontent">
+                                <h6>백XX</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="webt5"><input type="radio" id="webt5" name="voteWt" value="앞집나리"><img src="images/topimg5.jpg" alt="top5"></label>
+                            <div class="votecontent">
+                                <h6>앞집나리</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="webt6"><input type="radio" id="webt6" name="voteWt" value="재벌집 막내아들"><img src="images/topimg6.jpg" alt="top6"></label>
+                            <div class="votecontent">
+                                <h6>재벌집 막내아들</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="webt7"><input type="radio" id="webt7" name="voteWt" value="연애혁명"><img src="images/topimg7.jpg" alt="top7"></label>
+                            <div class="votecontent">
+                                <h6>연애혁명</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="webt8"><input type="radio" id="webt8" name="voteWt" value="나노마신"><img src="images/topimg8.jpg" alt="top8"></label>              
+                            <div class="votecontent">
+                                <h6>나노마신</h6>
+                                
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+            <!-- 비주얼 영역 종료 -->
+
+            
+
+            <!-- 메인 컨텐츠 영역 시작 -->
+            <div id="maincontent">
+                <h3>장르별 <span>웹툰추천</span></h3>
+                <div class="tab_gr">
+                    <ul class="tab_manu">
+                        <li><a href="#" id="episode" title="에피소드">에피소드</a></li>
+                        <li><a href="#" id="omnibus" title="옴니버스">옴니버스</a></li>
+                        <li><a href="#" id="story" title="스토리">스토리</a></li>
+                        <li><a href="#" id="daily" title="일상">일상</a></li>
+                        <li><a href="#" id="comic" title="개그">개그</a></li>
+                        <li><a href="#" id="fantasy" title="판타지">판타지</a></li>
+                        <li><a href="#" id="action" title="액션">액션</a></li>
+                        <li><a href="#" id="drama" title="드라마">드라마</a></li>
+                        <li><a href="#" id="thrill" title="스릴러">스릴러</a></li>
+                        <li><a href="#" id="pure" title="순정">순정</a></li>
+                        <li><a href="#" id="sensibility" title="감성">감성</a></li>
+                        <li><a href="#" id="historical" title="무협/사극">무협/사극</a></li>
+                        <li><a href="#" id="sports" title="스포츠">스포츠</a></li>
+                    </ul>
+                        <div class="maincontent_img">
+                            <ul>
+                                <li><a href="webtoon.html">웹툰보기</a></li>
+                                <li><a href="#"><img src="images/api1.jpg" alt="api1"></a>
+                                <a href="#">대학원 탈출일지</a></li>
+                                <li><a href="#"><img src="images/api2.jpg" alt="api2"></a>
+                                <a href="#">약한영웅</a></li>
+                                <li><a href="#"><img src="images/api3.jpg" alt="api3"></a>
+                                <a href="#">마루는강쥐</a></li>
+                                <li><a href="#"><img src="images/api4.jpg" alt="api4"></a>
+                                <a href="#">미드우트</a></li>
+                                <li><a href="#"><img src="images/api5.jpg" alt="api5"></a>
+                                <a href="#">천하제일 대사형</a></li>
+                                <li><a href="#"><img src="images/api6.jpg" alt="api6"></a>
+                                <a href="#">삼국지톡</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="webtoon.html">웹툰보기</a></li>                             
+                                <li><a href="#"><img src="images/omni1.jpg" alt="omni1"></a>
+                                <a href="#">사변괴담</a></li>
+                                <li><a href="#"><img src="images/omni2.jpg" alt="omni2"></a>
+                                <a href="#">궤짝</a></li>
+                                <li><a href="#"><img src="images/omni3.gif" alt="omni3"></a>
+                                <a href="#">히어로메이커</a></li>
+                                <li><a href="#"><img src="images/omni4.jpg" alt="omni4"></a>
+                                <a href="#">청춘 블라썸</a></li>
+                                <li><a href="#"><img src="images/omni5.jpg" alt="omni5"></a>
+                                <a href="#">결혼생활 그림일기</a></li>
+                                <li><a href="#"><img src="images/omni6.jpg" alt="omni6"></a>
+                                <a href="#">언다잉</a></li>
+                            </ul>                                             
+                            <ul>
+                                <li><a href="webtoon.html">웹툰보기</a></li>
+                                <li><a href="#"><img src="images/sto1.jpg" alt="sto1"></a>
+                                <a href="#">앞집나리</a></li>
+                                <li><a href="#"><img src="images/sto2.jpg" alt="sto2"></a>
+                                <a href="#">김부장</a></li>
+                                <li><a href="#"><img src="images/sto3.jpg" alt="sto3"></a>
+                                <a href="#">재벌집 막내아들</a></li>
+                                <li><a href="#"><img src="images/sto4.jpg" alt="sto4"></a>
+                                <a href="#">외모지상주의</a></li>
+                                <li><a href="#"><img src="images/sto5.jpg" alt="sto5"></a>
+                                <a href="#">연애혁명</a></li>
+                                <li><a href="#"><img src="images/sto6.jpg" alt="sto6"></a>
+                                <a href="#">99강화나무몽둥이</a></li>
+                            </ul>                                              
+                            <ul>
+                                <li><a href="webtoon.html">웹툰보기</a></li>
+                                <li><a href="#"><img src="images/dai1.jpg" alt="dai1"></a>
+                                <a href="#">대학원 탈출일지</a></li>
+                                <li><a href="#"><img src="images/dai2.jpg" alt="dai2"></a>
+                                <a href="#">안녕,나의 수집</a></li>
+                                <li><a href="#"><img src="images/dai3.jpg" alt="dai3"></a>
+                                <a href="#">윌유메리미</a></li>
+                                <li><a href="#"><img src="images/dai4.jpg" alt="dai4"></a>
+                                <a href="#">결혼생활 그림일기</a></li>
+                                <li><a href="#"><img src="images/dai5.jpg" alt="dai5"></a>
+                                <a href="#">루루라라 우리네 인생</a></li>
+                                <li><a href="#"><img src="images/dai6.jpg" alt="dai6"></a>
+                                <a href="#">그냥 선생님</a></li>
+                            </ul>                       
+                            <ul>
+                                <li><a href="webtoon.html">웹툰보기</a></li>
+                                <li><a href="#"><img src="images/co1.jpg" alt="co1"></a>
+                                <a href="#">마루는 강쥐</a></li>
+                                <li><a href="#"><img src="images/co2.jpg" alt="co2"></a>
+                                <a href="#">놓지마 정신줄 시즌3</a></li>
+                                <li><a href="#"><img src="images/co3.jpg" alt="co3"></a>
+                                <a href="#">돌격! 용마치킨</a></li>
+                                <li><a href="#"><img src="images/co4.jpg" alt="co4"></a>
+                                <a href="#">이십팔세기 광팬</a></li>
+                                <li><a href="#"><img src="images/co5.jpg" alt="co5"></a>
+                                <a href="#">언덕 위의 제임스</a></li>
+                                <li><a href="#"><img src="images/co6.jpg" alt="co6"></a>
+                                <a href="#">경자전성시대</a></li>
+                            </ul>                                       
+                            <ul>
+                                <li><a href="webtoon.html">웹툰보기</a></li>
+                                <li><a href="#"><img src="images/fan1.jpg" alt="fan1"></a>
+                                <a href="#">신의 탑</a></li>
+                                <li><a href="#"><img src="images/fan2.gif" alt="fan2"></a>
+                                <a href="#">히어로메이커</a></li>
+                                <li><a href="#"><img src="images/fan3.jpg" alt="fan3"></a>
+                                <a href="#">앵무살수</a></li>
+                                <li><a href="#"><img src="images/fan4.jpg" alt="fan4"></a>
+                                <a href="#">라서드</a></li>
+                                <li><a href="#"><img src="images/fan5.jpg" alt="fan5"></a>
+                                <a href="#">오로지 오로라</a></li>
+                                <li><a href="#"><img src="images/fan6.jpg" alt="fan6"></a>
+                                <a href="#">호랑신랑뎐</a></li>
+                            </ul>                                              
+                            <ul>
+                                <li><a href="webtoon.html">웹툰보기</a></li>
+                                <li><a href="#"><img src="images/act1.jpg" alt="act1"></a>
+                                <a href="#">더블클릭</a></li>
+                                <li><a href="#"><img src="images/act2.jpg" alt="act2"></a>
+                                <a href="#">파운더</a></li>
+                                <li><a href="#"><img src="images/act3.jpg" alt="act3"></a>
+                                <a href="#">신군</a></li>
+                                <li><a href="#"><img src="images/act4.jpg" alt="act4"></a>
+                                <a href="#">랭커</a></li>
+                                <li><a href="#"><img src="images/act5.jpg" alt="act5"></a>
+                                <a href="#">상사몽</a></li>
+                                <li><a href="#"><img src="images/act6.jpg" alt="act6"></a>
+                                <a href="#">하이웨이 투 헬</a></li>
+                            </ul>                                                
+                            <ul>
+                                <li><a href="webtoon.html">웹툰보기</a></li>
+                                <li><a href="#"><img src="images/drm1.jpg" alt="drm1"></a>
+                                <a href="#">하루의 하루</a></li>
+                                <li><a href="#"><img src="images/drm2.jpg" alt="drm2"></a>
+                                <a href="#">소녀의 세계</a></li>
+                                <li><a href="#"><img src="images/drm3.jpg" alt="drm3"></a>
+                                <a href="#">팔이피플</a></li>
+                                <li><a href="#"><img src="images/drm4.jpg" alt="drm4"></a>
+                                <a href="#">뷰티풀 군바리</a></li>
+                                <li><a href="#"><img src="images/drm5.jpg" alt="drm5"></a>
+                                <a href="#">퀘스트지상주의</a></li>
+                                <li><a href="#"><img src="images/drm6.jpg" alt="drm6"></a>
+                                <a href="#">사이다걸</a></li>
+                            </ul>                                                
+                            <ul> <li><a href="webtoon.html">웹툰보기</a></li>
+                                <li><a href="#"><img src="images/pure1.jpg" alt="pure1"></a>
+                                <a href="#">이제야 연애</a></li>
+                                <li><a href="#"><img src="images/pure2.jpg" alt="pure2"></a>
+                                <a href="#">악녀 18세 공략기</a></li>
+                                <li><a href="#"><img src="images/pure3.jpg" alt="pure3"></a>
+                                <a href="#">사랑의 헌옷수거함</a></li>
+                                <li><a href="#"><img src="images/pure4.jpg" alt="pure4"></a>
+                                <a href="#">세번째 로망스</a></li>
+                                <li><a href="#"><img src="images/pure5.jpg" alt="pure5"></a>
+                                <a href="#">이별 후 사내 결혼</a></li>
+                                <li><a href="#"><img src="images/pure6.jpg" alt="pure6"></a>
+                                <a href="#">나만의 고막남친</a></li>
+                            </ul>                                              
+                            <ul>
+                                <li><a href="webtoon.html">웹툰보기</a></li>
+                                <li><a href="#"><img src="images/emt1.jpg" alt="emt1"></a>
+                                <a href="#">6월의 라벤더</a></li>
+                                <li><a href="#"><img src="images/emt2.jpg" alt="emt2"></a>
+                                <a href="#">웅크</a></li>
+                                <li><a href="#"><img src="images/emt3.jpeg" alt="emt3"></a>
+                                <a href="#">소녀의 디딤돌 : 희망,함께 날다</a></li>
+                                <li><a href="#"><img src="images/emt4.jpg" alt="emt4"></a>
+                                <a href="#">연우의 순정</a></li>
+                                <li><a href="#"><img src="images/emt5.jpg" alt="emt5"></a>
+                                <a href="#">슈퍼스타 천대리</a></li>
+                                <li><a href="#"><img src="images/emt6.jpg" alt="emt6"></a>
+                                <a href="#">북경신보</a></li>
+                            </ul>                                              
+                            <ul>
+                                <li><a href="webtoon.html">웹툰보기</a></li>
+                                <li><a href="#"><img src="images/thr1.jpg" alt="thr1"></a>
+                                <a href="#">꿈의 기업</a></li>
+                                <li><a href="#"><img src="images/thr2.jpg" alt="thr2"></a>
+                                <a href="#">경비실에서 안내방송 드립니다</a></li>
+                                <li><a href="#"><img src="images/thr3.jpg" alt="thr3"></a>
+                                <a href="#">불청객</a></li>
+                                <li><a href="#"><img src="images/thr4.jpg" alt="thr4"></a>
+                                <a href="#">꼬리잡기</a></li>
+                                <li><a href="#"><img src="images/thr5.jpg" alt="thr5"></a>
+                                <a href="#">퍼니게임</a></li>
+                                <li><a href="#"><img src="images/thr6.jpg" alt="thr6"></a>
+                                <a href="#">꼭 닮은 딸</a></li>
+                            </ul>                                               
+                            <ul>
+                                <li><a href="webtoon.html">웹툰보기</a></li>
+                                <li><a href="#"><img src="images/his1.jpg" alt="his1"></a>
+                                <a href="#">장씨세가 호의무사</a></li>
+                                <li><a href="#"><img src="images/his2.jpg" alt="his2"></a>
+                                <a href="#">사막에 핀 달</a></li>
+                                <li><a href="#"><img src="images/his3.jpg" alt="his3"></a>
+                                <a href="#">천화서고 대공자</a></li>
+                                <li><a href="#"><img src="images/his4.jpg" alt="his4"></a>
+                                <a href="#">일타강사 백사부</a></li>
+                                <li><a href="#"><img src="images/his5.jpg" alt="his5"></a>
+                                <a href="#">한 달 서른 날</a></li>
+                                <li><a href="#"><img src="images/his6.jpg" alt="his6"></a>
+                                <a href="#">몽홀</a></li>
+                            </ul>                                        
+                            <ul>
+                                <li><a href="webtoon.html">웹툰보기</a></li>
+                                <li><a href="#"><img src="images/spt1.jpg" alt="spt1"></a>
+                                <a href="#">윈드브레이커</a></li>
+                                <li><a href="#"><img src="images/spt2.jpg" alt="spt2"></a>
+                                <a href="#">위닝샷!</a></li>
+                                <li><a href="#"><img src="images/spt3.jpg" alt="spt3"></a>
+                                <a href="#">가비지타임</a></li>
+                                <li><a href="#"><img src="images/spt4.jpg" alt="spt4"></a>
+                                <a href="#">탑코너</a></li>
+                                <li><a href="#"><img src="images/spt5.jpg" alt="spt5"></a>
+                                <a href="#">태권보이</a></li>
+                                <li><a href="#"><img src="images/spt6.jpg" alt="spt6"></a>
+                                <a href="#">인피니티</a></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+            <!-- 메인 컨텐츠 영역 종료 -->
+        </div> 
+        <!-- 컨텐츠 영역 종료 -->
+
+        <!-- 사이드 영역 시작 -->
+        <!-- 웹툰 올리기 영역 시작 -->
+        <aside id="side">
+            <div class="updateWebtoon">
+                <a href="login.html"><img src="images/updateWeb.PNG" alt="updateWeb" width="240" height="42"></a>
+            </div>
+        <!-- 웹툰 올리기 영역 종료 -->
+        <!-- 신작 웹툰 추천 영역 시작 -->
+            <div class="newSuggestWebtoon">
+                <h3><span>신작</span> 추천 웹툰</h3>
+                <ul>
+                    <li><a href="#"><img src="images/new1.jpg" alt="new1"></a>
+                        <a href="#" class="suggestName">짐승의 꽃</a>
+                        <p>태어날 때부터 몸에서 나는 지독한 악취를 이유로
+                            부모에게 버림받고 주변 사람들에게 배척당하는 삶을 살아온 라일라.
+                            쫓겨나듯 숲속의 버려진 오두막에서 혼자 생활하던 라일라에게
+                            '냄새를 맡지 못하는' 남자 비오스트가 어느날 갑자기 나타나 라일라에게 친절하게 군다.
+                            처음으로 라일라에게 손을 내밀어주고, 처음으로 라일라에게 다정함을 알려준 비오스트.
+                            라일라는 그를 사랑하지 않을 수 없었다. 자신이 그로인해 곧 죽을 운명이라는 것을 깨닫고 난 뒤에도.</p>
+                    </li>
+                    <li><a href="#"><img src="images/new2.jpg" alt="new2"></a>
+                        <a href="#" class="suggestName">돌격! 용마치킨</a>
+                        <p>치킨집 수렴의 법칙. 당신이 문과든 이과든 결국은 치킨집을 하게 된다!
+                            ....라는 법칙은 세상을 구하고 돌아온 용사도 예외는 아니었다.
+                            그러나 신의 계략으로 용사는 마왕과 함께 빚을 갚아야 하는데…
+                            
+                            빚? 갚아주겠어… 바로 이 치킨으로! 그런데… 직원들의 상태가 심상치 않다?
+                            용사와 마왕의 눈물나는 자본주의 극복기</p>
+                    </li>
+                    <li><a href="#"><img src="images/new3.jpg" alt="new3"></a>
+                        <a href="#" class="suggestName">더 캐슬 - 귀안의 신부</a>
+                        <p>그림 속에 숨어 사는 그림 도깨비를 보고 자란 유연. 왕세자와 딸을 혼인시키기 위해 유연의 눈이 필요하다는 최 회장에게 자신의 엄마를 살리는 조건으로 유연은 왕실을 상대로 한 결혼 사기극에 동참하기로 한다.</p>
+                    </li>
+                </ul>
+            </div>
+        <!-- 신작 웹툰 추천 영역 종료 -->
+        <!-- 인기급상승 웹툰 영역 시작 -->
+        <div class="timeRank">
+            <h3>인기급상승 웹툰</h3>
+            <div class="timeRankArea">
+                <div class="timeRankh4">
+                    <h4><a href="#hotRank">인기순</a></h4>
+                    <h4><a href="#updateRank">업데이트 순</a></h4>
+                </div>                
+                <section id="hotRank" class="allRank"> 
+                    <h4 class="rankHidden">인기순</h4>                  
+                    <ol>
+                        <li><a href="#">퀘스트지상주의-71화 오랜만의 자극이네</a></li>
+                        <li><a href="#">윈드브레이커-4부 - 51화 좋은 약</a></li>
+                        <li><a href="#">신의 탑-3부 135화</a></li>
+                        <li><a href="#">소녀의세계-2부 134화</a></li>
+                        <li><a href="#">신화급 귀속 아이템을 손에 넣었다-38화</a></li>
+                        <li><a href="#">뷰티풀 군바리-368화_대형사고 (3)</a></li>
+                        <li><a href="#">팔이피플-72화 - 판결</a></li>
+                        <li><a href="#">똑 닮은 딸-76화</a></li>
+                        <li><a href="#">별난식당-3화 돼지국밥</a></li>
+                        <li><a href="#">장씨세가 호위무사-198화</a></li>
+                    </ol>
+                </section>
+                <section id="updateRank" class="allRank">
+                    <h4 class="rankHidden">업데이트순</h4>
+                    <ol>
+                        <li><a href="#">히어로메이커-거래</a></li>
+                        <li><a href="#">신의 탑 -3부 135화</a></li>
+                        <li><a href="#">꿈의 기업-6부 10화</a></li>
+                        <li><a href="#">수영만화일기 -시즌2 35화 일상의 행복</a></li>
+                        <li><a href="#">이제야 연애-65화</a></li>
+                        <li><a href="#">악녀 18세 공략기-61화</a></li>
+                        <li><a href="#">뷰티풀 군바리-368화_대형사고 (3)</a></li>
+                        <li><a href="#">소녀의 세계-2부 134화</a></li>
+                        <li><a href="#">앵무살수-시즌3 34화</a></li>
+                        <li><a href="#">팔이피플-72화</a></li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+        <!-- 인기급상승 웹툰 영역 종료 -->
+        <!-- 공지사항 웹툰 영역 시작 -->
+        <div class="notice">
+            <h3>공지사항</h3>
+            <ul>
+                <li><a href="notice.html#notice1">네이버웹툰 연재 작가를 모십니다!</a></li>
+                <li><a href="notice.html#notice2">웹소설원작 웹툰을 위한 각색/작화 작가를 모십니다!</a></li>
+                <li><a href="notice.html#notice3">#내돈내툰, 우리가 웹툰을 즐기는 방법</a></li>
+                <li><a href="notice.html#notice4"><strong>베스트도전, 도전만화 관련 서비스 개선 사항 안내</strong></a></li>
+                <li><a href="notice.html#notice5">2023년 2월 유료화 전환 작품 안내</a></li>
+            </ul>
+            <a href="notice.html" class="more" title="공지사항 더보기">더보기</a>
+        </div>
+        <!-- 공지사항 웹툰 영역 종료 -->
+        <!-- 나머지 사이드 영역 시작 -->
+        <div id="etcSide">
+            
+            <a href="#">웹툰 고객센터</a>
+        </div>
+        <!-- 나머지 사이드 영역 종료 -->
+        </aside>
+        <!-- 사이드 영역 종료 -->
+
+        <!-- 푸터 영역 시작 -->
+        <footer id="footer">
+            <div id="footerInner">
+                <div class="copyArea">
+                    <div class="webtoon_copy">
+                        <ul>
+                            <li><a href="#">네이버웹툰 이용약관</a></li>
+                            <li><a href="#">전용상품권 이용약관</a></li>
+                            <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                            <li><a href="#">청소년보호정책</a></li>
+                            <li><a href="#">웹툰 고객센터</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">광고.사업문의</a></li>
+                        </ul>
+                        <address><a href="#">
+                            &copy; NAVER WEBTOON Limited
+                        </a></address>
+                    </div>
+                    <div class="naver_copy">
+                        <ul>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                            <li><a href="#">책임의 한계와 법적고지</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">결제도용신고</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">저작권침해 신고</a></li>
+                        </ul>
+                        <address><a href="#">
+                            &copy; NAVER CORP
+                        </a></address>
+                    </div>
+                </div>
+                <div class="compony_info">
+                    <ul>
+                        <li><a href="#">사업자등록번호 669-86-01888</a></li>
+                        <li><a href="#">통신판매업 신고번호 2020-성남분당B-0719(사업자정보확인)</a></li>
+                        <li><a href="#">대표이사 김준구</a></li>
+                        <li><a href="#">호스팅사업자 네이버비즈니스플랫폼</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">주소 경기도 성남시 분당구 분당내곡로 131 판교테크원 타워1, 11-12층</a></li>
+                        <li><a href="#">고객센터 1588-3820</a></li>
+                        <li><a href="#">이메일 ccnaver@naver.com</a></li>
+                    </ul>
+                    <p>모든 콘텐츠의 저작권은 저작권자 또는 제공처에 있으며, 이를 무단으로 이용하는 경우 관련 법령에 따라 법적 책임을 질 수 있습니다.</p>
+                    <p>이 프로젝트는 상업용이 아닌 교육용으로 사용하였습니다.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- 푸터 영역 종료 -->
+    </div>
+    <!-- wrapper 영역 종료 -->
+    <!-- fixed  -->
+    <a href="#header" id="gotop">↑</a>
+    <button type="button" id="changeLight">다크 모드로 보기</button>
+</body>
+</html>

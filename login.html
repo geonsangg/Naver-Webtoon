@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver웹툰</title>
+    <link rel="shortcut icon" href="images/webtoon.png">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/logincommon.css">
+</head>
+<body>
+    <!-- 로그인 전체 영역 시작 -->
+    <div id="loginWrap">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="images/webtoon.png" alt="logo">
+            </a>
+        </h1>
+        <div class="loginArea">
+            <form action="member.js" method="post">
+                <fieldset>
+                    <legend>입력 칸</legend>
+                <div class="loginbox">
+                        <p>
+                            <label for="id"></label>
+                            <input type="text" id="id" name="id" placeholder="네이버 아이디, 이메일" required>
+                        </p><p>
+                            <label for="pass"></label>
+                            <input type="password" id="pass" name="pass" placeholder="비밀번호" required>
+                        </p>
+                        <label for="login" class="loggin"><input type="checkbox" name="login" id="login"><span>로그인 상태 유지</span></label>
+                        <button type="submit" class="green">로그인</button>
+                        <p class="underBar">또는</p>
+                        <a href="qrlogin.html" class="qrblack">QR코드 로그인</a>
+                        <a href="join.html">회원가입</a>
+                        <a href="#">계정찾기</a>
+                        <a href="#">비밀번호 찾기</a>
+                </div>
+                </fieldset>
+            </form>
+        </div>
+        <footer id="footer">
+            <div class="footer_link">
+                <ul>
+                    <li>이용약관</li>
+                    <li><strong>개인정보처리방침</strong></li>
+                    <li>책임의 한계와 법적고지</li>
+                    <li>회원정보 고객센터</li>
+                </ul>
+            </div>
+            <div class="footer_copy">
+                <span class="text">Copyright</span>
+                <span class="corp">© NAVER Corp.</span>
+                <span class="text">All Rights Reserved.</span>
+            </div>
+        </footer>
+    </div>
+    <!-- 로그인 전체 영역 종료-->
+</body>
+</html>

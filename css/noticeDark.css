@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(30, 31, 32);
+}
+#header fieldset input, #header fieldset .search_box button{
+    background-color: rgb(30, 31, 32);
+}
+#header a {
+    color: #fff;
+}
+#header .login a {
+    color: #fff;
+}
+#noticeArea h2 , #noticeArea dt {
+    color: #fff;
+}
+#side .newBestChallenge {
+    background-color: rgb(30, 31, 32);
+}
+#side .newBestChallenge h3, #side .newBestChallenge a:nth-of-type(2) {
+    color: #fff;
+}
+.timeRank h3, .timeRankh4 h4 a, .timeRank section a{
+    color: #fff;
+}
+.notice h3, .notice a{
+    color: #fff;
+}
+a#gotop {
+    color: rgb(194, 201, 210);
+    background-color: rgb(52, 54, 56);
+}
+#changeLight {
+    color: rgb(194, 201, 210);
+    background-color: rgb(52, 54, 56);
+}

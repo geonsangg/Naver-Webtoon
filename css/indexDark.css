@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(30, 31, 32);
+}
+#header fieldset input, #header fieldset .search_box button{
+    background-color: rgb(30, 31, 32);
+}
+#header a {
+    color: #fff;
+}
+#header .login a {
+    color: #fff;
+}
+#visual > h2 , #visual h6{
+    color: #fff;
+}
+#voteMenu li input {
+    accent-color: rgb(0, 213, 100);
+   
+}
+#trail h2{
+    color: #fff;
+}
+#maincontent h3, #maincontent .tab_manu li a, .maincontent_img li a {
+    color: #fff;
+}
+.maincontent_img li:first-child a {
+    background-color: rgb(30, 31, 32);
+}
+#side .newSuggestWebtoon h3, #side .newSuggestWebtoon a {
+    color: #fff;
+}
+.timeRank h3, .timeRankh4 h4 a, .timeRank section a{
+    color: #fff;
+}
+.notice h3, .notice a{
+    color: #fff;
+}
+a#gotop {
+    color: rgb(194, 201, 210);
+    background-color: rgb(52, 54, 56);
+}
+ #changeLight {
+    color: rgb(194, 201, 210);
+    background-color: rgb(52, 54, 56);
+} 
