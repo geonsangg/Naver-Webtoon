@@ -166,5 +166,6 @@
     overflow:hidden; 
     text-overflow:ellipsis;
     height:54px;
+    line-height: 18px;
     color: #999;
 }

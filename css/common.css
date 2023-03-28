@@ -95,9 +95,9 @@ body {
     border-radius: 3px;
 }
 #header fieldset .search_box button {
-    width: 33px;
+    width: 43px;
     height: 34.33px;
-    margin-right: 5px;    
+    padding: 0 5px;
     border: none;
     color: #aaa;
     background-color: #fff;

@@ -91,7 +91,7 @@
 /* 웹툰 바로가기 영역 종료 */
 /* 웹소설 영역 시작 */
 #novel {
-    width: 710px;
+    width: 700px;
     margin-top: 10px;
     position: relative;
 }
@@ -134,21 +134,6 @@
     font-weight: bold;
     color: #000;
     margin-top: 10px;
-}
-.novel_btn {
-    display: flex;
-    position: relative;
-    height: 15px;
-    bottom: 17px;
-    overflow: hidden;
-
-}
-.novel_button {
-    position: relative;
-    background: url(../images/point_button.png);
-    width: 12px;
-    height: 46px;
-    left: 325px;
 }
 /* 웹소설 영역 종료 */
 /* 사이드 영역 시작 */
